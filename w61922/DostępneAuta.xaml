@@ -1,0 +1,15 @@
+﻿<Window x:Class="w61922.DostępneAuta"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:w61922"
+        mc:Ignorable="d"
+        Title="DostępneAuta" Height="450" Width="800">
+    <Grid Cursor="">
+        <Label Content="Lista dostępnych samochodów do wypożyczenia:" HorizontalAlignment="Center" Margin="0,74,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Wyjdź" HorizontalAlignment="Center" Margin="0,344,0,0" VerticalAlignment="Top" Height="45" Width="160" Click="Button_Click"/>
+        <DataGrid x:Name="DgWyp" Margin="85,137,111,110"/>
+
+    </Grid>
+</Window>

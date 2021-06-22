@@ -1,0 +1,37 @@
+﻿<Window x:Class="w61922.Wypożycz"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:w61922"
+        mc:Ignorable="d"
+        Title="Wypożycz" Height="450" Width="800">
+    <Grid>
+        <Label Content="Wypożycz Samochód" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <DataGrid x:Name="DgWypożycz" Margin="455,107,50,79" SelectionChanged="DgWypożycz_SelectionChanged"/>
+        <Button Content="Wypożycz" HorizontalAlignment="Left" Height="43" Margin="122,312,0,0" VerticalAlignment="Top" Width="130" Click="Button_Click"/>
+        <Label Content="Podaj Id samochodu" HorizontalAlignment="Left" Height="30" Margin="45,129,0,0" VerticalAlignment="Top" Width="155" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="TbWyb" HorizontalAlignment="Left" Margin="45,164,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="198" TextChanged="TbWyb_TextChanged" RenderTransformOrigin="0.5,0.5" Height="22">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.655"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Label Content="Podaj marke samochodu" HorizontalAlignment="Left" Margin="45,192,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="TbWybM" HorizontalAlignment="Left" Margin="45,233,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="200" RenderTransformOrigin="0.5,0.5" Height="22" TextChanged="TbWybM_TextChanged">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.008"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+
+    </Grid>
+</Window>

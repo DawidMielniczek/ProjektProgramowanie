@@ -1,0 +1,24 @@
+﻿<Window x:Class="w61922.AktualnieWyp"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:w61922"
+        mc:Ignorable="d"
+        Title="AktualnieWyp" Height="450" Width="800">
+    <Grid>
+        <Label Content="Lista aktualnie wypożyczonych przez Ciebie samochodów:" HorizontalAlignment="Left" Margin="135,95,0,0" VerticalAlignment="Top" FontSize="18" FontWeight="Bold"/>
+        <Button Content="Wyjdź" HorizontalAlignment="Left" Margin="295,352,0,0" VerticalAlignment="Top" Height="35" Width="150" RenderTransformOrigin="0.5,0.5" Click="Button_Click">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.221"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <DataGrid x:Name="GridGl" Margin="30,149,30,100"/>
+
+    </Grid>
+</Window>

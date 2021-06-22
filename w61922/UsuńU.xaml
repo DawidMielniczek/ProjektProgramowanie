@@ -1,0 +1,25 @@
+﻿<Window x:Class="w61922.UsuńU"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:w61922"
+        mc:Ignorable="d"
+        Title="UsuńU" Height="350" Width="300">
+    <Grid>
+        <Label Content="Usuwanie Klienta" HorizontalAlignment="Center" Margin="0,76,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold"/>
+        <Label Content="Podaj Pesel Klienta" HorizontalAlignment="Left" Margin="22,143,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TbPe" HorizontalAlignment="Left" Margin="30,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="33" RenderTransformOrigin="0.5,0.5">
+            <TextBox.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-0.745"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <Button Content="Usuń" HorizontalAlignment="Left" Margin="166,239,0,0" VerticalAlignment="Top" Height="30" Width="70" Click="Button_Click"/>
+
+    </Grid>
+</Window>

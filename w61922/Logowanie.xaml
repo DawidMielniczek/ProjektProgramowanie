@@ -1,0 +1,19 @@
+﻿<Window x:Class="w61922.Logowanie"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:w61922"
+        mc:Ignorable="d"
+        Title="Logowanie" Height="364" Width="350">
+    <Grid>
+        <Label Content="Logowanie" HorizontalAlignment="Left" Margin="105,57,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Width="260"/>
+        <Label Content="Nazwa użytkownika" HorizontalAlignment="Left" Margin="28,129,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TBL" HorizontalAlignment="Left" Margin="30,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="205" Height="29"/>
+        <Label Content="Hasło" HorizontalAlignment="Left" Margin="30,194,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TbH" HorizontalAlignment="Left" Margin="30,225,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="205" Height="26"/>
+        <Button x:Name="BtnLog" Content="Zaloguj jako klient" HorizontalAlignment="Left" Margin="42,279,0,0" VerticalAlignment="Top" Width="116" Height="44" Click="BtnLog_Click"/>
+        <Button Content="Zaloguj jako Admin" HorizontalAlignment="Left" Margin="187,279,0,0" VerticalAlignment="Top" Height="42" Width="110" Click="Button_Click"/>
+
+    </Grid>
+</Window>
